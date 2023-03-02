@@ -1,0 +1,1339 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>MiMunicipio PR</title>
+        <base href="/mimunicipio/">
+        <!-- cidraemergencias -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <!-- Plugins css -->
+        <link href="https://mimunicipiopr.com/mimunicipio/assets/libs/bootstrap-tagsinput/bootstrap-tagsinput.css"
+              rel="stylesheet" />
+        <link href="https://mimunicipiopr.com/mimunicipio/assets/libs/switchery/switchery.min.css" rel="stylesheet"
+              type="text/css" />
+
+        <link href="https://mimunicipiopr.com/mimunicipio/assets/libs/multiselect/multi-select.css" rel="stylesheet"
+              type="text/css" />
+        <link href="https://mimunicipiopr.com/mimunicipio/assets/libs/select2/select2.min.css" rel="stylesheet"
+              type="text/css" />
+        <link href="https://mimunicipiopr.com/mimunicipio/assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css"
+              rel="stylesheet" />
+        <link href="https://mimunicipiopr.com/mimunicipio/assets/libs/switchery/switchery.min.css" rel="stylesheet" />
+        <link href="https://mimunicipiopr.com/mimunicipio/assets/libs/bootstrap-timepicker/bootstrap-timepicker.min.css"
+              rel="stylesheet">
+        <link href="https://mimunicipiopr.com/mimunicipio/assets/libs/bootstrap-colorpicker/bootstrap-colorpicker.min.css"
+              rel="stylesheet">
+        <link href="https://mimunicipiopr.com/mimunicipio/assets/libs/bootstrap-datepicker/bootstrap-datepicker.css"
+              rel="stylesheet">
+        <link href="https://mimunicipiopr.com/mimunicipio/assets/libs/bootstrap-daterangepicker/daterangepicker.css"
+              rel="stylesheet">
+
+
+        <!-- App css -->
+        <link href="https://mimunicipiopr.com/mimunicipio/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="https://mimunicipiopr.com/mimunicipio/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="https://mimunicipiopr.com/mimunicipio/assets/css/app.css" rel="stylesheet" type="text/css" />
+
+
+
+        <link rel="stylesheet" href="styles.e19ea0cae8df6052b165.css">
+        <style>
+            .mainbg {
+                background-image: url(cityhall.png);
+                height: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
+    </head>
+
+    <body class="mainbg">
+    <app-root></app-root>
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay"></div>
+
+    <!-- Vendor js -->
+    <script src="https://mimunicipiopr.com/mimunicipio/assets/js/vendor.min.js"></script>
+
+    <!-- Plugins Js -->
+    <script
+    src="https://mimunicipiopr.com/mimunicipio/assets/libs/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+    <script src="https://mimunicipiopr.com/mimunicipio/assets/libs/switchery/switchery.min.js"></script>
+    <script src="https://mimunicipiopr.com/mimunicipio/assets/libs/multiselect/jquery.multi-select.js"></script>
+    <script src="https://mimunicipiopr.com/mimunicipio/assets/libs/jquery-quicksearch/jquery.quicksearch.min.js"></script>
+
+    <script src="https://mimunicipiopr.com/mimunicipio/assets/libs/select2/select2.min.js"></script>
+    <script
+    src="https://mimunicipiopr.com/mimunicipio/assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+    <script src="https://mimunicipiopr.com/mimunicipio/assets/libs/jquery-mask-plugin/jquery.mask.min.js"></script>
+    <script src="https://mimunicipiopr.com/mimunicipio/assets/libs/moment/moment.js"></script>
+    <script
+    src="https://mimunicipiopr.com/mimunicipio/assets/libs/bootstrap-timepicker/bootstrap-timepicker.min.js"></script>
+    <script
+    src="https://mimunicipiopr.com/mimunicipio/assets/libs/bootstrap-colorpicker/bootstrap-colorpicker.min.js"></script>
+    <script
+    src="https://mimunicipiopr.com/mimunicipio/assets/libs/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="https://mimunicipiopr.com/mimunicipio/assets/libs/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script
+    src="https://mimunicipiopr.com/mimunicipio/assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+    <script src="https://mimunicipiopr.com/mimunicipio/assets/libs/tinymce/tinymce.min.js"></script>
+    <!-- isotope filter plugin -->
+    <script src="https://mimunicipiopr.com/mimunicipio/assets/libs/isotope/isotope.pkgd.min.js"></script>
+
+    <!--venobox lightbox-->
+    <script src="https://mimunicipiopr.com/mimunicipio/assets/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- App js-->
+    <!-- <script src="https://mimunicipiopr.com/mimunicipio/assets/js/app.min.js"></script> -->
+    <script
+    src="https://maps.googleapis.com/maps/api/js?libraries=geometry,drawing&key=AIzaSyDuGmGltBOpRr8AnGMD4kM79cBF3Xb7nWs"></script>
+
+    <script type="text/javascript" src="runtime.26209474bfa8dc87a77c.js"></script>
+    <script type="text/javascript" src="es2015-polyfills.7e65c9559769cd5f38b8.js" nomodule></script>
+    <script type="text/javascript" src="polyfills.2b767098c09ef2304dbf.js"></script>
+    <script>
+        $.fn.chekLink = function (keycheck) {
+
+            if (trdx) {
+
+                for (var i = 0; i < $(this).length; i++) {
+                    console.log($($(this)[i]).text());
+                    const txt = $($(this)[i]).text();
+
+                    // $( "a:contains('Control Center phone')").text(check('control_center_menu'));
+                    var regex = new RegExp("\\b(" + $.trim(txt) + ")\\b", "g");
+                    var regexContains = new RegExp(txt);
+                    if ($($(this)[i]).is(":button")) {
+
+                        const btxt = $($(this)[i]).html();
+                        // console.log(btxt + " is button");
+                        if ("Add".match(regex)) {
+                            $($(this)[i]).html(check('add'));
+                        } else if ("ADD".match(regex)) {
+                            $($(this)[i]).html(check('add'));
+                        } else if ("Search".match(regex)) {
+                            $($(this)[i]).html(check('search'));
+                        } else if ("Save".match(regex)) {
+                            $($(this)[i]).html(check('save'));
+                        } else if ("Upload Video".match(regex)) {
+                            $($(this)[i]).html(check('upload_video'));
+                        } else if ("Browse".match(regex)) {
+                            $($(this)[i]).html(check('browse'));
+                        } else if ("Save and leave on queue".match(regex)) {
+                            $($(this)[i]).html(check('save_and_leave_on_queue'));
+                        } else if ("Save and archive".match(regex)) {
+                            $($(this)[i]).html(check('save_and_archive'));
+                        } else if ("Save and archive".match(regex)) {
+                            $($(this)[i]).html(check('save_and_archive'));
+                        } else if ("Pick Ticket".match(regex)) {
+                            $($(this)[i]).html(check('pick_ticket'));
+                        } else if ("Cancel".match(regex)) {
+                            $($(this)[i]).html(check('cancel'));
+                        } else if ("More Info".match(regex)) {
+                            $($(this)[i]).html(check('more_info'));
+                        } else if ("Request Call".match(regex)) {
+                            $($(this)[i]).html(check('request_call'));
+                        } else if ("Front".match(regex)) {
+                            $($(this)[i]).html(check('front'));
+                        } else if ("Back".match(regex)) {
+                            $($(this)[i]).html(check('back'));
+                        } else if ("Request Audio".match(regex)) {
+                           
+                            $($(this)[i]).html(check('request_audio'));
+                        } else if (txt.startsWith("Close Ticket")) {
+                            // console.log("Date & Time:called");
+                           
+                            var xtick = txt.replace("Close", check('ticket_close_cp'));
+                            // xtick = xtick
+                            $($(this)[i]).html(xtick);
+                            console.log(xtick);
+                        } else if (txt.startsWith("Close #")) {
+                            // console.log("Date & Time:called");
+                           
+                            var xtick = txt.replace("Close", check('ticket_close_cp'));
+                            // xtick = xtick
+                            $($(this)[i]).html(xtick);
+                            console.log(xtick);
+                        } 
+                    } else if ("Upload Video".match(regex)) {
+                        $($(this)[i]).html(check('upload_video'));
+                    } else if ("Browse".match(regex)) {
+                        $($(this)[i]).html(check('browse'));
+                    } else if ("Add Image".match(regex)) {
+                        $($(this)[i]).html(check('add_image'));
+                    } else if ("Active".match(regex)) {
+                        $($(this)[i]).text(check('altr_active'));
+                    } else if ("Edit".match(regex)) {
+                        $($(this)[i]).text(check('edit'));
+                    } else if ("Action".match(regex)) {
+                        $($(this)[i]).text(check('action'));
+                    } else if ("Active".match(regex)) {
+                        $($(this)[i]).text(check('active'));
+                    } else if ("Inactive".match(regex)) {
+                        $($(this)[i]).text(check('inactive'));
+                    } else if ("Add".match(regex)) {
+                        $($(this)[i]).text(check('add'));
+                    } else if ("ADD".match(regex)) {
+                        $($(this)[i]).text(check('add'));
+                    } else if ("Search".match(regex)) {
+                        $($(this)[i]).text(check('search'));
+                    } else if ("Log".match(regex)) {
+                        $($(this)[i]).text(check('log'));
+                    } else if ("Per Page".match(regex)) {
+                        $($(this)[i]).text(check('Per_Page'));
+                        console.log($(this)[i]);
+                    } else if ("Reset".match(regex)) {
+                        $($(this)[i]).text(check('reset'));
+                    }
+
+
+                    if (keycheck === 'altr') {
+                        if ("Phone #".match(regexContains)) {
+                            $($(this)[i]).text(check('altr_phone'));
+                        } else if ("Active".match(regex)) {
+                            $($(this)[i]).text(check('altr_active'));
+                        } else if ("Edit".match(regex)) {
+                            $($(this)[i]).text(check('Edit'));
+                        } else if ("Action".match(regex)) {
+                            $($(this)[i]).text(check('action'));
+                        } else if ("Reconnect Phone Number".match(regex)) {
+                            $($(this)[i]).text(check('reconnect_num_menu'));
+                        } else if ("Active".match(regex)) {
+                            $($(this)[i]).text(check('active'));
+                        } else if ("Inactive".match(regex)) {
+                            $($(this)[i]).text(check('inactive'));
+                        }
+
+
+                    } else if (keycheck === 'n11_id') {
+                        console.log(regex);
+                        if ("Phone #".match(regexContains)) {
+                            console.log($($(this)[i]).text() + " of " + regexContains + " txt " + txt);
+                            $($(this)[i]).text(check('n11_phone'));
+                            console.log(check('n11_phone') + " match called");
+                        } else if ("Emergency number".match(regex)) {
+                            $($(this)[i]).text(check('emgy_phone_menu'));
+                        }
+                    } else if (keycheck === 'spo_id') {
+                        if ("Phone".match(regex)) {
+                            $($(this)[i]).text(check('spo_phone'));
+                        } else if ("State Police phone".match(regex)) {
+                            $($(this)[i]).text(check('state_pol_menu'));
+                        } else if ("Edit".match(regex)) {
+                            $($(this)[i]).text(check('edit'));
+                            console.log($(this)[i]);
+                        }
+                    } else if (keycheck === 'pm_id') {
+                        if ("Message".match(regex)) {
+                            $($(this)[i]).text(check('pm_message'));
+                        } else if ("Prefilled Messages".match(regex)) {
+                            $($(this)[i]).text(check('pre_fill_msg_menu'));
+                        } else if ("Edit".match(regex)) {
+                            $($(this)[i]).text(check('edit'));
+                        }
+                    } else if (keycheck === 'pf9_id') {
+                        if ("Message".match(regex)) {
+                            $($(this)[i]).text(check('pf9_message'));
+                        } else if ("911 Prefilled Messages".match(regex)) {
+                            $($(this)[i]).text(check('n911_pre_fill_menu'));
+                        }
+                    } else if (keycheck === 'pmp_id') {
+                        if ("Message".match(regex)) {
+                            $($(this)[i]).text(check('pmp_message'));
+                        } else if ("Picture Prefilled Messages".match(regex)) {
+                            $($(this)[i]).text(check('pic_pre_fil_menu'));
+                        }
+                    } else if (keycheck === 'et_id') {
+                        if ("Message Templates".match(regex)) {
+                            $($(this)[i]).text(check('msg_tmp_menu'));
+                        } else if ("Registration Email".match(regex)) {
+                            $($(this)[i]).text(check('et_activation_email_txt'));
+                        } else if ("Recover Password Email".match(regex)) {
+                            $($(this)[i]).text(check('et_recover_txt'));
+                        } else if ("Account Suspended Email".match(regex)) {
+                            $($(this)[i]).text(check('et_account_sus_txt'));
+                        } else if ("Account Requires Release".match(regex)) {
+                            $($(this)[i]).text(check('et_licensee_act_txt'));
+                        }
+                    } else if (keycheck === 'nh_id') {
+                        if ("Neighborhoods".match(regex)) {
+                            $($(this)[i]).text(check('neighborhoods_menu'));
+                        } else if ("Name".match(regex)) {
+                            $($(this)[i]).text(check('nh_name'));
+                        }
+                    } else if (keycheck === 'cvf_id') {
+                        if ("Covid-19 Forms".match(regex)) {
+                            $($(this)[i]).text(check('covid_forms_menu'));
+                        } else if ("Name".match(regex)) {
+                            $($(this)[i]).text(check('cvf_name'));
+                        } else if ("Name (Spanish)" == txt) {
+                            $($(this)[i]).text(check('cvf_name_es'));
+                        }
+                        // console.log($(this)[i]);
+                    } else if (keycheck === 'cvq_id') {
+                        if ("Covid-19 Questionnaire".match(regex)) {
+                            $($(this)[i]).text(check('covid_question_menu'));
+                        } else if ("Form ID".match(regex)) {
+                            $($(this)[i]).text(check('cvq_quest'));
+                        } else if ("Is Final Answer?".match(regex)) {
+                            $($(this)[i]).text(check('cvq_is_final'));
+                        } else if ("Question".match(regex)) {
+                            $($(this)[i]).text(check('cvq_question'));
+                        } else if ("Question (Spanish)" == txt) {
+                            $($(this)[i]).text(check('cvq_question_es'));
+                        }
+                    } else if (keycheck === 'aip_id') {
+                        if ("IP Rules".match(regex)) {
+                            $($(this)[i]).text(check('ip_rules_menu'));
+                        } else if ("Type".match(regex)) {
+                            $($(this)[i]).text(check('aip_ip_type'));
+                        } else if ("IP".match(regex)) {
+                            $($(this)[i]).text(check('aip_ip'));
+                        }
+                    } else if (keycheck === 'sip_id') {
+                        if ("IP Rules".match(regex)) {
+                            $($(this)[i]).text(check('ip_rules_menu'));
+                        } else if ("Port".match(regex)) {
+                            $($(this)[i]).text(check('sip_port'));
+                        } else if ("IP/Domain" == txt) {
+                            $($(this)[i]).text(check('sip_ip'));
+                        }
+                    } else if (keycheck === 'gps_id') {
+                        if ("GPS Servers".match(regex)) {
+                            $($(this)[i]).text(check('gps_server_menu'));
+                        } else if ("IP Address".match(regex)) {
+                            $($(this)[i]).text(check('gps_ip'));
+                        } else if ("MYSQL Username".match(regex)) {
+                            $($(this)[i]).text(check('gps_mysql_username'));
+                        } else if ("MYSQL Password".match(regex)) {
+                            $($(this)[i]).text(check('gps_mysql_password'));
+                        } else if ("API Key".match(regex)) {
+                            $($(this)[i]).text(check('gps_api_key'));
+                        } else if ("Location Command".match(regex)) {
+                            $($(this)[i]).text(check('gps_loc_cmd'));
+                        } else if ("Server URL".match(regex)) {
+                            $($(this)[i]).text(check('gps_loc_utl'));
+                        } else if ("Interval (in seconds)" == txt) {
+                            $($(this)[i]).text(check('gps_loc_interval'));
+                        }
+                    } else if (keycheck === 'mp_id') {
+                        if ("Mms Providers".match(regex)) {
+                            $($(this)[i]).text(check('mms_provider_menu'));
+                        } else if ("MMS Service Provider Name".match(regex)) {
+                            $($(this)[i]).text(check('mp_name'));
+                        } else if ("MMS Address".match(regex)) {
+                            $($(this)[i]).text(check('mp_address'));
+                        }
+                    } else if (keycheck === 'sms_id') {
+                        if ("SMS Settings".match(regex)) {
+                            $($(this)[i]).text(check('sms_settings_menu'));
+                        } else if ("Name".match(regex)) {
+                            $($(this)[i]).text(check('sms_name'));
+                        } else if ("Twilio Account SID".match(regex)) {
+                            $($(this)[i]).text(check('sms_twilio_sid'));
+                        } else if ("Authentication Token".match(regex)) {
+                            $($(this)[i]).text(check('sms_twilio_auth_token'));
+                        }
+                    } else if (keycheck === 'dtype_id') {
+                        if ("Device Types".match(regex)) {
+                            $($(this)[i]).text(check('device_types_menu'));
+                        } else if ("Name".match(regex)) {
+                            $($(this)[i]).text(check('dtype_name'));
+                        } else if ("Location SMS CMD".match(regex)) {
+                            $($(this)[i]).text(check('dtype_location_sms_cmd'));
+                        } else if ("Show always on Map".match(regex)) {
+                            $($(this)[i]).text(check('dtype_map'));
+                        } else if ("Yes".match(regex)) {
+                            $($(this)[i]).text(check('yes'));
+                        } else if ("No".match(regex)) {
+                            $($(this)[i]).text(check('no'));
+                        }
+                    } else if (keycheck === 'gpsdev_id') {
+                        if ("GPS Devices".match(regex)) {
+                            $($(this)[i]).text(check('gps_devices_menu'));
+                        } else if ("Name".match(regex)) {
+                            $($(this)[i]).text(check('gpsdev_name'));
+                        } else if ("IMEI".match(regex)) {
+                            $($(this)[i]).text(check('gpsdev_imei'));
+                        } else if ("SIM Phone Number".match(regex)) {
+                            $($(this)[i]).text(check('gpsdev_sim_phone'));
+                        } else if ("Home Phone Number".match(regex)) {
+                            $($(this)[i]).text(check('gpsdev_name'));
+                        } else if ("Type".match(regex)) {
+                            $($(this)[i]).text(check('gpsdev_type'));
+                        } else if ("User Type".match(regex)) {
+                            $($(this)[i]).text(check('gpsdev_user_type'));
+                        } else if ("Device Type".match(regex)) {
+                            $($(this)[i]).text(check('gpsdev_dtype_id'));
+                        } else if ("Profile".match(regex)) {
+                            $($(this)[i]).text(check('gpsdev_profile_title'));
+                        } else if ("Physical Address".match(regex)) {
+                            $($(this)[i]).text(check('gpsdev_phy_title'));
+                        } else if ("Postal Address".match(regex)) {
+                            $($(this)[i]).text(check('gpsdev_postal_title'));
+                        } else if ("Medical Info".match(regex)) {
+                            $($(this)[i]).text(check('gpsdev_medi_title'));
+                        } else if ("Emergency Contact 1".match(regex)) {
+                            $($(this)[i]).text(check('gpsdev_emgy_title1'));
+                        } else if ("Emergency Contact 2".match(regex)) {
+                            $($(this)[i]).text(check('gpsdev_emgy_title2'));
+                        } else if ("Emergency Contact 3".match(regex)) {
+                            $($(this)[i]).text(check('gpsdev_emgy_title3'));
+                        } else if ("Address".match(regex)) {
+                            $($(this)[i]).text(check('address'));
+                        } else if ("Country".match(regex)) {
+                            $($(this)[i]).text(check('country'));
+                        } else if ("State".match(regex)) {
+                            $($(this)[i]).text(check('state'));
+                        } else if ("City".match(regex)) {
+                            $($(this)[i]).text(check('city'));
+                        } else if ("Latitude".match(regex)) {
+                            $($(this)[i]).text(check('lat'));
+                        } else if ("Longitude".match(regex)) {
+                            $($(this)[i]).text(check('lon'));
+                        }
+                    } else if (keycheck === 'cam_id') {
+                        if ("Cameras".match(regex)) {
+                            $($(this)[i]).text(check('cameras_menu'));
+                        } else if ("Name".match(regex)) {
+                            $($(this)[i]).text(check('cam_name'));
+                        } else if ("Latitude".match(regex)) {
+                            $($(this)[i]).text(check('cam_lat'));
+                        } else if ("Longitude".match(regex)) {
+                            $($(this)[i]).text(check('cam_lan'));
+                        } else if ("RTSP Link".match(regex)) {
+                            $($(this)[i]).text(check('cam_rtsp_link'));
+                        }
+                    } else if (keycheck === 'user_id') {
+                        if ("Users".match(regex)) {
+                            $($(this)[i]).text(check('users_menu'));
+                        } else if ("Email".match(regex)) {
+                            $($(this)[i]).text(check('user_email'));
+                        } else if ("Password (leave empty if no change)" == txt) {
+                            $($(this)[i]).text(check('user_pass_leave_empty_if_no_change'));
+                        } else if ("First Name".match(regex)) {
+                            $($(this)[i]).text(check('user_first_name'));
+                        } else if ("Last Name".match(regex)) {
+                            $($(this)[i]).text(check('user_last_name'));
+                        } else if ("Mobile".match(regex)) {
+                            $($(this)[i]).text(check('user_phone'));
+                        } else if ("MMS Provider".match(regex)) {
+                            $($(this)[i]).text(check('user_mms_id'));
+                        } else if ("Extension ID".match(regex)) {
+                            $($(this)[i]).text(check('user_extn_id'));
+                        } else if ("Extension Name".match(regex)) {
+                            $($(this)[i]).text(check('user_extn_name'));
+                        } else if ("Extension Username".match(regex)) {
+                            $($(this)[i]).text(check('user_extn_user_name'));
+                        } else if ("Extension Password".match(regex)) {
+                            $($(this)[i]).text(check('user_extn_password'));
+                        } else if ("Level".match(regex)) {
+                            $($(this)[i]).text(check('user_level'));
+                        }
+                    } else if (keycheck === 'vid_photo1') {
+                        if ("Videos".match(regex)) {
+                            $($(this)[i]).text(check('video_menu'));
+                        }
+                    } else if (keycheck === 'zn_id') {
+                        if ("Zones".match(regex)) {
+                            $($(this)[i]).text(check('zones_menu'));
+                        } else if ("Name".match(regex)) {
+                            $($(this)[i]).text(check('zn_name'));
+                        }
+                    } else if (keycheck === 'cc_id') {
+                        if ("Municipal Dependencies".match(regex)) {
+                            $($(this)[i]).text(check('municipal_depen_menu'));
+                        } else if ("Name".match(regex)) {
+                            $($(this)[i]).text(check('cc_name'));
+                        } else if ("Contact Name".match(regex)) {
+                            $($(this)[i]).text(check('cc_contact_name'));
+                        } else if ("Email".match(regex)) {
+                            $($(this)[i]).text(check('cc_email'));
+                        } else if ("Phone".match(regex)) {
+                            $($(this)[i]).text(check('cc_phone'));
+                        } else if ("Address".match(regex)) {
+                            $($(this)[i]).text(check('cc_address_txt'));
+                        } else if ("Monday".match(regex)) {
+                            $($(this)[i]).text(check('cc_monday'));
+                        } else if ("Tuesday".match(regex)) {
+                            $($(this)[i]).text(check('cc_tuesday'));
+                        } else if ("Wednesday".match(regex)) {
+                            $($(this)[i]).text(check('cc_wednesday'));
+                        } else if ("Thursday".match(regex)) {
+                            $($(this)[i]).text(check('cc_thursday'));
+                        } else if ("Friday".match(regex)) {
+                            $($(this)[i]).text(check('cc_friday'));
+                        } else if ("Saturday".match(regex)) {
+                            $($(this)[i]).text(check('cc_saturday'));
+                        } else if ("Sunday".match(regex)) {
+                            $($(this)[i]).text(check('cc_sunday'));
+                        } else if ("Work Hrs From".match(regex)) {
+                            $($(this)[i]).text(check('cc_work_hrs_from'));
+                        } else if ("Work Hrs To".match(regex)) {
+                            $($(this)[i]).text(check('cc_work_hrs_to'));
+                        } else if ("Lat".match(regex)) {
+                            $($(this)[i]).text(check('cc_lat'));
+                        } else if ("Lon".match(regex)) {
+                            $($(this)[i]).text(check('cc_lon'));
+                        } else if ("Description".match(regex)) {
+                            $($(this)[i]).text(check('cc_about_txt'));
+                        } else if ("State".match(regex)) {
+                            $($(this)[i]).text(check('cc_state_id'));
+                        } else if ("City".match(regex)) {
+                            $($(this)[i]).text(check('cc_city_id'));
+                        } else if ("Zip".match(regex)) {
+                            $($(this)[i]).text(check('cc_zip'));
+                        }
+                    } else if (keycheck === 'scode_id') {
+                        if ("Shortcodes".match(regex)) {
+                            $($(this)[i]).text(check('shortcodes_menu'));
+                        } else if ("Short Code String".match(regex)) {
+                            $($(this)[i]).text(check('scode_name'));
+                        }
+                    } else if (keycheck === 'sponsor_id') {
+                        if ("Sponsors".match(regex)) {
+                            $($(this)[i]).text(check('sponsors_menu'));
+                        } else if ("Sponsor Banner".match(regex)) {
+                            $($(this)[i]).text(check('sponsor_name'));
+                        } else if ("Link".match(regex)) {
+                            $($(this)[i]).text(check('sponsor_link'));
+                        }
+                    } else if (keycheck === 'eu_id') {
+                        if ("End Users".match(regex)) {
+                            $($(this)[i]).text(check('end_users_menu'));
+                        } else if ("Email".match(regex)) {
+                            $($(this)[i]).text(check('eu_email'));
+                        } else if ("First Name".match(regex)) {
+                            $($(this)[i]).text(check('eu_first_name'));
+                        } else if ("Last Name".match(regex)) {
+                            $($(this)[i]).text(check('eu_last_name'));
+                        } else if ("Confirmed".match(regex)) {
+                            $($(this)[i]).text(check('eu_confirmed'));
+                        } else if ("Phone ID".match(regex)) {
+                            $($(this)[i]).text(check('eu_phone_id'));
+                        } else if ("Phone Type".match(regex)) {
+                            $($(this)[i]).text(check('eu_phone_type'));
+                        } else if ("Password (Leave empty if no change)" == txt) {
+                            $($(this)[i]).text(check('eu_password_leave_empty_if_no_change'));
+                        } else if ("Profile".match(regex)) {
+                            $($(this)[i]).text(check('eu_profile_title'));
+                        } else if ("Physical Address".match(regex)) {
+                            $($(this)[i]).text(check('eu_phy_title'));
+                        } else if ("Postal Address".match(regex)) {
+                            $($(this)[i]).text(check('eu_postal_title'));
+                        } else if ("Medical Info".match(regex)) {
+                            $($(this)[i]).text(check('eu_medi_title'));
+                        } else if ("Emergency Contact 1".match(regex)) {
+                            $($(this)[i]).text(check('eu_emgy_title1'));
+                        } else if ("Emergency Contact 2".match(regex)) {
+                            $($(this)[i]).text(check('eu_emgy_title2'));
+                        } else if ("Emergency Contact 3".match(regex)) {
+                            $($(this)[i]).text(check('eu_emgy_title3'));
+                        } else if ("Address".match(regex)) {
+                            $($(this)[i]).text(check('address'));
+                        } else if ("Country".match(regex)) {
+                            $($(this)[i]).text(check('country'));
+                        } else if ("State".match(regex)) {
+                            $($(this)[i]).text(check('state'));
+                        } else if ("City".match(regex)) {
+                            $($(this)[i]).text(check('city'));
+                        } else if ("Latitude".match(regex)) {
+                            $($(this)[i]).text(check('lat'));
+                        } else if ("Longitude".match(regex)) {
+                            $($(this)[i]).text(check('lon'));
+                        }
+                    } else if (keycheck === 'h_id') {
+                        if ("Help Topics".match(regex)) {
+                            $($(this)[i]).text(check('help_topics_menu'));
+                        } else if ("Topic".match(regex)) {
+                            $($(this)[i]).text(check('h_question'));
+                        } else if ("Category".match(regex)) {
+                            $($(this)[i]).text(check('h_cat_id'));
+                        } else if ("Explanation".match(regex)) {
+                            $($(this)[i]).text(check('h_answer'));
+                        } else if ("User Types".match(regex)) {
+                            $($(this)[i]).text(check('h_user_types'));
+                        }
+                    } else if (keycheck === 'rimg_id') {
+                        if ("Picture Messages Report".match(regex)) {
+                            $($(this)[i]).text(check('pic_reports_menu'));
+                        } else if ("Ticket #" == txt) {
+                            $($(this)[i]).text(check('rimg_id'));
+                        } else if ("Sender".match(regex)) {
+                            $($(this)[i]).text(check('eu_first_name'));
+                        } else if ("Imei".match(regex)) {
+                            $($(this)[i]).text(check('rimg_imei'));
+                        } else if ("Device".match(regex)) {
+                            $($(this)[i]).text(check('rimg_device'));
+                        } else if ("Rmig Message".match(regex)) {
+                            $($(this)[i]).text(check('rmig_message'));
+                        } else if ("Rmig Lat".match(regex)) {
+                            $($(this)[i]).text(check('rmig_lat'));
+                        } else if ("Rmig Lon".match(regex)) {
+                            $($(this)[i]).text(check('rmig_lon'));
+                        } else if ("Rmig Notes".match(regex)) {
+                            $($(this)[i]).text(check('rmig_notes'));
+                        } else if ("Rmig User Id".match(regex)) {
+                            $($(this)[i]).text(check('rmig_user_id'));
+                        } else if ("Rmig Log".match(regex)) {
+                            $($(this)[i]).text(check('rmig_log'));
+                        } else if ("Notes".match(regex)) {
+                            $($(this)[i]).text(check('rmig_notes'));
+                        } else if ("Attended By".match(regex)) {
+                            $($(this)[i]).text(check('rmig_attend_by'));
+                        } else if ("Lat".match(regex)) {
+                            $($(this)[i]).text(check('rmig_lat'));
+                        } else if ("Lon".match(regex)) {
+                            $($(this)[i]).text(check('rmig_lon'));
+                        }
+                    } else if (keycheck === 'ticket_id') {
+                        if ("911 Report".match(regex)) {
+                            $($(this)[i]).text(check('n911_reports_menu'));
+                        } else if ("Hazard Tickets Report".match(regex)) {
+                            $($(this)[i]).text(check('hazard_reports_menu'));
+                        } else if ("Ticket #" == txt) {
+                            $($(this)[i]).text(check('ticket_id'));
+                        } else if ("App User".match(regex)) {
+                            $($(this)[i]).text(check('eu_full_name'));
+                        } else if ("Ticket Imei".match(regex)) {
+                            $($(this)[i]).text(check('ticket_imei'));
+                        } else if ("Ticket Name".match(regex)) {
+                            $($(this)[i]).text(check('ticket_name'));
+                        } else if ("Ticket Device".match(regex)) {
+                            $($(this)[i]).text(check('ticket_device'));
+                        } else if ("Ticket Type".match(regex)) {
+                            $($(this)[i]).text(check('ticket_type'));
+                        } else if ("Ticket Status".match(regex)) {
+                            $($(this)[i]).text(check('ticket_status'));
+                        } else if ("Ticket Open Time".match(regex)) {
+                            $($(this)[i]).text(check('ticket_open_log'));
+                        } else if ("Ticket Pick Time".match(regex)) {
+                            $($(this)[i]).text(check('ticket_pick_log'));
+                        } else if ("Ticket Close Time".match(regex)) {
+                            $($(this)[i]).text(check('ticket_close_log'));
+                        } else if ("Ticket Open Log".match(regex)) {
+                            $($(this)[i]).text(check('ticket_open_log'));
+                        } else if ("Ticket Pick Log".match(regex)) {
+                            $($(this)[i]).text(check('ticket_close_log'));
+                        } else if ("Ticket Close Log".match(regex)) {
+                            $($(this)[i]).text(check('ticket_device'));
+                        } else if ("Ticket Lat".match(regex)) {
+                            $($(this)[i]).text(check('ticket_lat'));
+                        } else if ("Ticket Lan".match(regex)) {
+                            $($(this)[i]).text(check('ticket_lan'));
+                        } else if ("Overview".match(regex)) {
+                            $($(this)[i]).text(check('ticket_overview'));
+                        } else if ("Map".match(regex)) {
+                            $($(this)[i]).text(check('ticket_map'));
+                        } else if ("Files".match(regex)) {
+                            $($(this)[i]).text(check('ticket_files'));
+                        } else if ("Attended By".match(regex)) {
+                            $($(this)[i]).text(check('ticket_closed_by_id'));
+                        } else if ("Ticket Attended By".match(regex)) {
+                            $($(this)[i]).text(check('ticket_closed_by_id'));
+                        }
+                    } else if (keycheck === 'covid_section') {
+                        if ("Covid-19 Reports".match(regex)) {
+                            $($(this)[i]).text(check('covid_19_reports'));
+                        } else if ("Covid-19 Historical Comparison".match(regex)) {
+                            $($(this)[i]).text(check('covid_19_historical_comparison'));
+                        } else if ("Date".match(regex)) {
+                            $($(this)[i]).text(check('covid_date'));
+                        } else if ("Form ID".match(regex)) {
+                            $($(this)[i]).text(check('covid_form_id'));
+                        } else if ("Neighborhood".match(regex)) {
+                            $($(this)[i]).text(check('covid_neighborhood'));
+                        } else if ("Select Form to Populate Daily Report".match(regex)) {
+                            $($(this)[i]).text(check('select_form_to_populate_daily_report'));
+                        } else if ("Date Range".match(regex)) {
+                            $($(this)[i]).text(check('covid_date_range'));
+                        } else if ("Select Form to Populate Historical Report".match(regex)) {
+                            $($(this)[i]).text(check('select_form_to_populate_historical_report'));
+                        } else if ("Select Form".match(regex)) {
+                            $($(this)[i]).text(check('covid_select_form'));
+                        } else if ("All".match(regex)) {
+                            $($(this)[i]).text(check('covid_all'));
+                        }
+                        // console.log($( "div*='Select Form to Populate Daily Report'" ));
+                        // $( "div:contains( 'Select Form to Populate Daily Report' )" ).html(check('select_form_to_populate_daily_report'));
+                        // $( "div:contains( 'Select Form to Populate Historical Report' )" ).html(check('select_form_to_populate_historical_report'));
+                    } else if (keycheck === 'img_section') {
+                        if ("Tap to view fullscreen".match(regex)) {
+                            $($(this)[i]).text(check('tap_to_view_fullscreen'));
+                        } else if ("Show Direction".match(regex)) {
+                            $($(this)[i]).text(check('show_direction'));
+                        } else if ("Sender Information".match(regex)) {
+                            $($(this)[i]).text(check('sender_information'));
+                        } else if ("Leave a Note".match(regex)) {
+                            $($(this)[i]).text(check('leave_a_note'));
+                        } else if ("Save and leave on queue".match(regex)) {
+                            $($(this)[i]).html(check('save_and_leave_on_queue'));
+                        } else if ("Save and archive".match(regex)) {
+                            $($(this)[i]).html(check('save_and_archive'));
+                        }
+                    } else if (keycheck === 'dash_section') {
+                        if ("Tickets".match(regex)) {
+                            $($(this)[i]).text(check('tickets'));
+                        } else if ("Do you wish to pick the Ticket:".match(regexContains)) {
+                            var xtick = txt;
+                            xtick.replace('Do you wish to pick the Ticket:', check('do_you_wish_to_pick_the_ticket:'));
+                            $($(this)[i]).text(xtick);
+                            console.log(xtick);
+                        } else if ("Pick Ticket".match(regex)) {
+                            $($(this)[i]).html(check('pick_ticket'));
+                        } else if ("Ticket".match(regex)) {
+                            $($(this)[i]).html(check('ticket'));
+                        } else if ("Cancel".match(regex)) {
+                            $($(this)[i]).html(check('cancel'));
+                        }
+
+                        // console.log($(this)[i]);
+                    } else if (keycheck === 'cpanel') {
+                        if ("About".match(regex)) {
+                            $($(this)[i]).text(check('about'));
+                        } else if ("Reconnect Call".match(regex)) {
+                            $($(this)[i]).text(check('reconnect_call'));
+                        } else if ("Request Photo".match(regex)) {
+                            $($(this)[i]).text(check('req_photo'));
+                        } else if ("Request Audio".match(regex)) {
+                            if ($($(this)[i]).is(":button")) {
+                                
+                            }else if ($($(this)[i]).is("th")) {
+                               //  $($(this)[i]).html(check('req_audio'));
+                            }else {
+                                $($(this)[i]).text(check('request_audio'));
+                            }
+                            console.log(($($(this)[i])));
+                            
+                        } else if ("Files / Logs".match(regex)) {
+                            $($(this)[i]).text(check('files_logs'));
+                        }else if (txt.startsWith("Called: ")) {
+                            console.log("Location: called");
+                            var xtick = txt.replace("Called: ", check('ticket_type_cp'));
+                            // xtick = xtick
+                            $($(this)[i]).text(xtick);
+                            console.log(xtick);
+                        } else if (txt.startsWith("Called:")) {
+                            console.log("Location: called");
+                            var xtick = txt.replace("Called", check('ticket_type_cp')+" ");
+                            // xtick = xtick
+                            $($(this)[i]).text(xtick);
+                            console.log(xtick);
+                        } else if (txt.startsWith("Cords:")) {
+                            console.log("Cords: called");
+                            var xtick = txt.replace("Cords", check('ticket_cords_cp'));
+                            // xtick = xtick
+                            $($(this)[i]).text(xtick);
+                            console.log(xtick);
+                        } else if (txt.startsWith("Date & Time:")) {
+                            console.log("Date & Time:called");
+                            var xtick = txt.replace("Date & Time", check('ticket_datetime_cp'));
+                            // xtick = xtick
+                            $($(this)[i]).text(xtick);
+                            console.log(xtick);
+                        } else if (txt.startsWith("Address:")) {
+                            // console.log("");
+                            var xtick = txt.replace("Address", check('ticket_address_cp'));
+                            // xtick = xtick
+                            $($(this)[i]).text(xtick);
+                            console.log(xtick);
+                        } else if (txt.startsWith("Mobile :")) {
+                            // console.log("Date & Time:called");
+                            var xtick = txt.replace("Mobile", check('ticket_mobile_cp'));
+                            // xtick = xtick
+                            $($(this)[i]).text(xtick);
+                            console.log(xtick);
+                        } else if (txt.startsWith("Phone 2:")) {
+                            // console.log("Date & Time:called");
+                            var xtick = txt.replace("Phone 2", check('ticket_phone2_cp'));
+                            // xtick = xtick
+                            $($(this)[i]).text(xtick);
+                            console.log(xtick);
+                        } else if (txt.startsWith("Leave a Note & Close Ticket #")) {
+                            // console.log("Date & Time:called");
+                            var xtick = txt.replace("Leave a Note & Close Ticket", check('ticket_leave_note_close_cp'));
+                            // xtick = xtick
+                            $($(this)[i]).text(xtick);
+                            console.log(xtick);
+                        } else if ("End Users".match(regex)) {
+                            $($(this)[i]).text(check('end_users_menu'));
+                        } else if ("Contact Email".match(regex)) {
+                            $($(this)[i]).text(check('eu_email'));
+                        } else if ("Contact First Name".match(regex)) {
+                            $($(this)[i]).text(check('emergency_name'));
+                        } else if ("Contact Last Name".match(regex)) {
+                            $($(this)[i]).text(check('emergency_nombre'));
+                        } else if (txt.startsWith("Contact Mobile #")) {
+                            $($(this)[i]).text(check('emergency_movil'));
+                        } else if (txt.startsWith("Contact Phone #")) {
+                            $($(this)[i]).text(check('emergency_telephono'));
+                        } else if ("Contact Address".match(regex)) {
+                            $($(this)[i]).text(check('emergency_address'));
+                        } else if ("Contact Relationship".match(regex)) {
+                            $($(this)[i]).text(check('emergency_relationship'));
+                        } else if ("Primary Doctor Name".match(regex)) {
+                            $($(this)[i]).text(check('medical_nombre'));
+                        } else if (txt.startsWith("Doctor Phone #")) {
+                            $($(this)[i]).text(check('medical_telephono'));
+                        } else if (txt.startsWith("Mobile #")) {
+                            $($(this)[i]).text(check('medical_movil'));
+                        } else if ("List Conditions or Allergies you want us to know about".match(regex)) {
+                            $($(this)[i]).text(check('medical_alergias'));
+                        } else if ("Phone ID".match(regex)) {
+                            $($(this)[i]).text(check('eu_phone_id'));
+                        } else if ("Phone Type".match(regex)) {
+                            $($(this)[i]).text(check('eu_phone_type'));
+                        } else if ("Password (Leave empty if no change)" == txt) {
+                            $($(this)[i]).text(check('eu_password_leave_empty_if_no_change'));
+                        } else if ("Profile".match(regex)) {
+                            $($(this)[i]).text(check('eu_profile_title'));
+                        } else if ("Physical Address".match(regex)) {
+                            $($(this)[i]).text(check('eu_phy_title'));
+                        } else if ("Postal Address".match(regex)) {
+                            $($(this)[i]).text(check('eu_postal_title'));
+                        } else if ("Medical Info".match(regex)) {
+                            $($(this)[i]).text(check('eu_medi_title'));
+                        } else if ("Emergency Contact 1".match(regex)) {
+                            $($(this)[i]).text(check('eu_emgy_title1'));
+                        } else if ("Emergency Contact 2".match(regex)) {
+                            $($(this)[i]).text(check('eu_emgy_title2'));
+                        } else if ("Emergency Contact 3".match(regex)) {
+                            $($(this)[i]).text(check('eu_emgy_title3'));
+                        } else if ("Address".match(regex)) {
+                            $($(this)[i]).text(check('address'));
+                        } else if ("Country".match(regex)) {
+                            $($(this)[i]).text(check('country'));
+                        } else if ("State".match(regex)) {
+                            $($(this)[i]).text(check('state'));
+                        } else if ("City".match(regex)) {
+                            $($(this)[i]).text(check('city'));
+                        } else if ("Latitude".match(regex)) {
+                            $($(this)[i]).text(check('lat'));
+                        } else if ("Longitude".match(regex)) {
+                            $($(this)[i]).text(check('lon'));
+                        } else if (txt.startsWith("Ticket : ")) {
+                            var xtick = txt.replace("Ticket", check('ticket'));
+                            // xtick = xtick
+                            $($(this)[i]).text(xtick);
+                            console.log(xtick);
+                        } else if (txt.startsWith("Do you wish to close the Ticket:")) {
+                            var xtick = txt.replace("Do you wish to close the Ticket", check('do_you_wish_to_close_ticket'));
+                            // xtick = xtick
+                            $($(this)[i]).text(xtick);
+                            console.log(xtick);
+                        }
+                    } else if (keycheck == txt) {
+
+                        if (txt.startsWith("Do you wish to pick the Ticket")) {
+                            var xtick = txt.replace("Do you wish to pick the Ticket:", check('do_you_wish_to_pick_the_ticket'));
+                            // xtick = xtick
+                            $($(this)[i]).text(xtick);
+                            console.log(xtick);
+                        } else if (txt.startsWith("Ticket")) {
+                            var xtick = txt.replace("Ticket", check('ticket'));
+                            // xtick = xtick
+                            $($(this)[i]).text(xtick);
+                            console.log(xtick);
+                        }
+
+
+                    }
+
+                }
+            } else {
+                console.log(keycheck + " pre called");
+                loadLang(keycheck);
+            }
+
+            console.log(keycheck + " called");
+        };
+        $.fn.ctrlCenLink = function () {
+            if (trdx) {
+                for (var i = 0; i < $(this).length; i++) {
+                    console.log($($(this)[i]).text());
+                    const txt = $($(this)[i]).text();
+                    // $( "a:contains('Control Center phone')").text(check('control_center_menu'));
+                    var regex = new RegExp("\\b(" + txt + ")\\b", "g");
+                    if ("Phone".match(regex)) {
+                        $($(this)[i]).text(check('ccp_phone'));
+                    } else if ("Active".match(regex)) {
+                        $($(this)[i]).text(check('ccp_active'));
+                    } else if ("Edit".match(regex)) {
+                        $($(this)[i]).text(check('edit'));
+                    } else if ("Action".match(regex)) {
+                        $($(this)[i]).text(check('action'));
+                    } else if ("Control Center phone".match(regex)) {
+                        $($(this)[i]).text(check('control_center_menu'));
+                    } else if ("Active".match(regex)) {
+                        $($(this)[i]).text(check('active'));
+                    } else if ("Inactive".match(regex)) {
+                        $($(this)[i]).text(check('inactive'));
+                    }
+                }
+            } else {
+                loadLang('ctrlcen');
+            }
+
+            console.log("ctel called");
+        };
+        $.fn.genLink = function () {
+            console.log("gen link called");
+            if (trdx) {
+                for (var i = 0; i < $(this).length; i++) {
+                    console.log($($(this)[i]).text());
+                    const txt = $($(this)[i]).text();
+                    var regex = new RegExp("\\b(" + txt + ")\\b", "g");
+                    if ("Company Name".match(regex)) {
+                        $($(this)[i]).text(check('as_company_name'));
+                    } else if ("Email".match(regex)) {
+                        $($(this)[i]).text(check('as_email'));
+                    } else if ("Address".match(regex)) {
+                        $($(this)[i]).text(check('as_address_txt'));
+                    } else if ("City".match(regex)) {
+                        $($(this)[i]).text(check('as_city_id'));
+                    } else if ("State".match(regex)) {
+                        $($(this)[i]).text(check('as_state_id'));
+                    } else if ("Covid-19 Module".match(regex)) {
+                        $($(this)[i]).text(check('as_covid'));
+                    } else if ("Zip".match(regex)) {
+                        $($(this)[i]).text(check('as_zip'));
+                    } else if ("Banner".match(regex)) {
+                        $($(this)[i]).text(check('as_banner_type'));
+                    } else if ("Terms & Conditions".match(regex)) {
+                        $($(this)[i]).text(check('as_terms'));
+                    } else if ("Phone".match(regex)) {
+                        $($(this)[i]).text(check('as_phone'));
+                    } else if ("Logo".match(regex)) {
+                        $($(this)[i]).text(check('as_logo'));
+                    } else if ("Google Map Api Key".match(regex)) {
+                        $($(this)[i]).text(check('as_gmap'));
+                    } else if ("Website Link".match(regex)) {
+                        $($(this)[i]).text(check('as_web'));
+                    } else if ("Facebook Link".match(regex)) {
+                        $($(this)[i]).text(check('as_fb'));
+                    } else if ("Twitter Link".match(regex)) {
+                        $($(this)[i]).text(check('as_twitter'));
+                    } else if ("Youtube Link".match(regex)) {
+                        $($(this)[i]).text(check('as_yt'));
+                    } else if ("Instagram Link".match(regex)) {
+                        $($(this)[i]).text(check('as_insta'));
+                    } else if ("Country".match(regex)) {
+                        $($(this)[i]).text(check('as_country_id'));
+                    } else if ("rqw2".match(regex)) {
+                        $($(this)[i]).text(check('as_week_start_id'));
+                    } else if ("Smtp Host".match(regex)) {
+                        $($(this)[i]).text(check('as_smtp_host'));
+                    } else if ("Smtp Port".match(regex)) {
+                        $($(this)[i]).text(check('as_smtp_port'));
+                    } else if ("Smtp User Name".match(regex)) {
+                        $($(this)[i]).text(check('as_smtp_user_name'));
+                    } else if ("Smtp Password".match(regex)) {
+                        $($(this)[i]).text(check('as_smtp_pass'));
+                    } else if ("From Email".match(regex)) {
+                        $($(this)[i]).text(check('as_smtp_from'));
+                    } else if ("From Name".match(regex)) {
+                        $($(this)[i]).text(check('as_smtp_extra'));
+                    } else if ("Time Zone".match(regex)) {
+                        $($(this)[i]).text(check('as_time_zone'));
+                    } else if ("Settings".match(regex)) {
+                        $($(this)[i]).text(check('general_menu'));
+                    } else if ("Send Received Alerts To Users (Multi Select)".match(regex)) {
+                        $($(this)[i]).text(check('send_rcvd_alerts_to_users'));
+                    }
+                }
+            } else {
+                loadLang('gen');
+            }
+        };
+        $.fn.scanLink = function () {
+            // console.log($(this));
+            if (trdx) {
+                for (var i = 0; i < $(this).length; i++) {
+                    console.log($($(this)[i]).text());
+                    const txt = $.trim($($(this)[i]).text());
+                    var regex = new RegExp("\\b(" + $.trim(txt) + ")\\b", "g");
+                    var regexContains = new RegExp(txt);
+
+//                if ("Home Phone".match(regexContains)) {
+//                    $($(this)[i]).html(check('home_phone'));
+//                    console.log("home phone matchXXA");
+//                }
+
+                    if ("Pre-filled messages".match(regex)) {
+                        $($(this)[i]).text(check('pre_fill_msg_menu'))
+                    } else if ("911 Pre-filled messages".match(regex)) {
+                        $($(this)[i]).text(check('n911_pre_fill_menu'))
+                    } else if ("Picture Pre-filled messages".match(regex)) {
+                        $($(this)[i]).text(check('pic_pre_fil_menu'))
+                    } else if ("General".match(regex)) {
+                        $($(this)[i]).text(check('general_menu'))
+                    } else if ("Control Center phone".match(regex)) {
+                        $($(this)[i]).text(check('control_center_menu'))
+                    } else if ("Emergency phone".match(regex)) {
+                        $($(this)[i]).text(check('emgy_phone_menu'))
+                    } else if ("Reconnect Number".match(regex)) {
+                        $($(this)[i]).text(check('reconnect_num_menu'))
+                    } else if ("State Police Number".match(regex)) {
+                        $($(this)[i]).text(check('state_pol_menu'))
+                    } else if ("Message Templates".match(regex)) {
+                        $($(this)[i]).text(check('msg_tmp_menu'))
+                    } else if ("Neighborhoods".match(regex)) {
+                        $($(this)[i]).text(check('neighborhoods_menu'))
+                    } else if ("Covid-19 Forms".match(regex)) {
+                        $($(this)[i]).text(check('covid_forms_menu'))
+                    } else if ("Covid-19 Questionnaire".match(regex)) {
+                        $($(this)[i]).text(check('covid_question_menu'))
+                    } else if ("IP Rules".match(regex)) {
+                        $($(this)[i]).text(check('ip_rules_menu'))
+                    } else if ("SIP Server".match(regex)) {
+                        $($(this)[i]).text(check('sip_server_menu'))
+                    } else if ("GPS Servers".match(regex)) {
+                        $($(this)[i]).text(check('gps_server_menu'))
+                    } else if ("MMS Providers".match(regex)) {
+                        $($(this)[i]).text(check('mms_provider_menu'))
+                    } else if ("SMS Settings".match(regex)) {
+                        $($(this)[i]).text(check('sms_settings_menu'))
+                    } else if ("Device Types".match(regex)) {
+                        $($(this)[i]).text(check('device_types_menu'))
+                    } else if ("GPS Devices".match(regex)) {
+                        $($(this)[i]).text(check('gps_devices_menu'))
+                    } else if ("Cameras".match(regex)) {
+                        $($(this)[i]).text(check('cameras_menu'))
+                    } else if ("Users".match(regex)) {
+                        $($(this)[i]).text(check('users_menu'))
+                    } else if ("Video".match(regex)) {
+                        $($(this)[i]).text(check('video_menu'))
+                    } else if ("Zone".match(regex)) {
+                        $($(this)[i]).text(check('zone_menu'))
+                    } else if ("Municipal Dependencies".match(regex)) {
+                        $($(this)[i]).text(check('municipal_depen_menu'))
+                    } else if ("Shortcodes".match(regex)) {
+                        $($(this)[i]).text(check('shortcodes_menu'))
+                    } else if ("Sponsors".match(regex)) {
+                        $($(this)[i]).text(check('sponsors_menu'))
+                    } else if ("End Users".match(regex)) {
+                        $($(this)[i]).text(check('end_users_menu'))
+                    } else if ("Help Topics".match(regex)) {
+                        $($(this)[i]).text(check('help_topics_menu'))
+                    } else if ("Reports".match(regex)) {
+                        $($(this)[i]).text(check('reports_top_menu'))
+                    } else if ("More.." == txt) {
+                        $($(this)[i]).empty().append('<i class="mdi mdi-format-list-bulleted"></i> ' + check('more_top_menu'));
+                    } else if ("Picture Reports".match(regex)) {
+                        $($(this)[i]).text(check('pic_reports_menu'))
+                    } else if ("911 Reports".match(regex)) {
+                        $($(this)[i]).text(check('n911_reports_menu'))
+                    } else if ("Hazard Reports".match(regex)) {
+                        $($(this)[i]).text(check('hazard_reports_menu'))
+                    } else if ("Dashboard".match(regex)) {
+                        $($(this)[i]).empty().append('<i class="mdi mdi-lifebuoy"></i> ' + check('dashboard_top_menu'));
+                    } else if ("Incidents".match(regex)) {
+                        $($(this)[i]).empty().append('<i class="mdi mdi-camera"></i> ' + check('incidents_top_menu'));
+                    } else if ("Devices".match(regex)) {
+                        $($(this)[i]).empty().append('<i class="mdi mdi-crosshairs-gps"></i> ' + check('devices_top_menu'));
+                    } else if ("Push Notifications".match(regex)) {
+                        $($(this)[i]).empty().append('<i class="mdi mdi-chart-donut-variant"></i> ' + check('push_notifications_top_menu'));
+                    } else if ("Alertas Geo de Positivos".match(regex)) {
+                        $($(this)[i]).empty().append('<i class="mdi mdi-account-multiple-plus"></i> ' + check('covid19_posg_menu'));
+                    } else if ("Covid-19".match(regex)) {
+                        $($(this)[i]).empty().append('<i class="mdi mdi-account-convert"></i> ' + check('covid19_top_menu'));
+                    } else if ("Administration".match(regex)) {
+                        $($(this)[i]).empty().append(check('administration_top_menu'));
+                    } else if ("Addl. Settings".match(regex)) {
+                        $($(this)[i]).text(check('addl_settings_top_menu'));
+                    } else if ("Reports".match(regex)) {
+                        $($(this)[i]).text(check('reports_top_menu'));
+                    } else if ("Seismic activity".match(regex)) {
+                        $($(this)[i]).text(check('seismic_top_menu'));
+                    } else if ("Edit".match(regex)) {
+                        $($(this)[i]).text(check('edit'));
+                    } else if ("Add".match(regex)) {
+                        $($(this)[i]).text(check('add'));
+                    }
+                    /*
+                     else if ("Leave a Note & Close Ticket".match(regex)) {
+                     $($(this)[i]).text(check(''));
+                     } else if ("Location:".match(regex)) {
+                     $($(this)[i]).text(check(''));
+                     } else if ("Cords:".match(regex)) {
+                     $($(this)[i]).text(check(''));
+                     } else if ("Date & Time:".match(regex)) {
+                     $($(this)[i]).text(check(''));
+                     } else if ("About".match(regex)) {
+                     $($(this)[i]).text(check(''));
+                     } else if ("Address:".match(regex)) {
+                     $($(this)[i]).text(check('address'));
+                     } else if ("Home Phone:".match(regex)) {
+                     $($(this)[i]).text(check('home_phone'));
+                     console.log("home phone match");
+                     } else if ("SIM Phone:".match(regex)) {
+                     $($(this)[i]).text(check('sim_phone'));
+                     } else if ("More Info".match(regex)) {
+                     //  $($(this)[i]).text(check('more_info'));
+                     } else if ("Ticket".match(regex)) {
+                     $($(this)[i]).text(check('ticket'));
+                     } else if ("Do you wish to close the Ticket:".match(regex)) {
+                     $($(this)[i]).text(check('do_you_wish_to_close_the_ticket'));
+                     } else if ("Info".match(regex)) {
+                     $($(this)[i]).text(check('info'));
+                     } else if ("Emergency Contact".match(regex)) {
+                     $($(this)[i]).text(check('emergency_contact'));
+                     } else if ("Emergency Contact".match(regex)) {
+                     $($(this)[i]).text(check('emergency_contact'));
+                     } else if ("Emergency Contact".match(regex)) {
+                     $($(this)[i]).text(check('emergency_contact'));
+                     } else if ("Medical Info".match(regex)) {
+                     $($(this)[i]).text(check('medical_info'));
+                     } else if ("Emergency Contact Person Name".match(regex)) {
+                     $($(this)[i]).text(check('emergency_contact_person_name'));
+                     } else if ("Emergency Contact Person Phone".match(regex)) {
+                     $($(this)[i]).text(check('emergency_contact_person_phone'));
+                     } else if ("Emergency Contact Person Mobile".match(regex)) {
+                     $($(this)[i]).text(check('emergency_contact_person_mobile'));
+                     } else if ("Emergency Contact Person Email".match(regex)) {
+                     $($(this)[i]).text(check('emergency_contact_person_email'));
+                     } else if ("Relationship".match(regex)) {
+                     $($(this)[i]).text(check('relationship'));
+                     } else if ("Primary Doctor Name".match(regex)) {
+                     $($(this)[i]).text(check('primary_doctor_name'));
+                     } else if ("Doctor Phone".match(regex)) {
+                     $($(this)[i]).text(check('doctor_phone'));
+                     } else if ("Mobile".match(regex)) {
+                     $($(this)[i]).text(check('mobile'));
+                     } else if ("Email".match(regex)) {
+                     $($(this)[i]).text(check('email'));
+                     } else if ("List Conditions or Allergies you want us to know about".match(regex)) {
+                     $($(this)[i]).text(check('list_conditions_or_allergies'));
+                     }
+                     */
+
+
+
+                }
+            } else {
+                loadLang('admin');
+            }
+            // $($(this)).each(function(){console.log(this.html())})
+
+
+        };
+
+
+        $.fn.textEquals = function (txt) {
+            var xx = $(this).text();
+            console.log($(this));
+            var regex = new RegExp("\\b(" + txt + ")\\b", "g");
+            console.log(regex);
+            console.log(xx.match(regex));
+            if (xx.match(regex)) {
+                console.log('matched');
+                return $(this);
+            }
+            // if ($(this).text() == txt){
+            //   return $(this);
+            // }
+
+            return;
+        };
+        let trdx;
+        function check(o) {
+            if (trdx[o]) {
+                return trdx[o];
+            }
+
+            return o;
+        }
+        function addLang() {
+            var topNav = $("[class*='list-unstyled topnav-menu float-right mb-0']");
+            console.log(topNav.parent());
+
+            topNav.parent().empty().append(`<ul class="list-unstyled topnav-menu float-right mb-0">
+             <li class="nav-item d-md-block">
+               <a class="right-sidebar-toggle">
+                 <form>
+                   <select class="form-control form-control-sm" style="margin-top: 10px;" id="lang" name="lang">
+                    <option value="es">ES</option>
+                     <option value="en">EN</option>
+                   </select>
+                 </form>
+               </a>
+  
+            </li>
+          </ul>`).append(topNav);
+            console.log('topnav');
+            $('#lang').change(() => {
+                localStorage.setItem('_token_mimunicipio_vasudev_ip_lang', $('#lang').val());
+                location.reload();
+            });
+            let langx = navigator.language.substring(0, 2);
+            if (localStorage.getItem('_token_mimunicipio_vasudev_ip_lang')) {
+                langx = localStorage.getItem('_token_mimunicipio_vasudev_ip_lang');
+            }
+            $('#lang').val(langx);
+            console.log(langx);
+            $.post('https://mimunicipiopr.com/mimunicipioprv2/index.php/translations/getlang', JSON.stringify({lang: langx}), result => {
+                console.log('result called');
+                console.log(result);
+                const trd = result.data;
+                trdx = trd;
+                // console.log($("a").textEquals('Dashboard'));
+
+                // $( "a:contains('Dashboard')").empty().append('<i class="mdi mdi-lifebuoy"></i> '+trd.dashboard_top_menu);
+                // $( "a:contains('Incidents')").empty().append('<i class="mdi mdi-camera"></i> '+trd.incidents_top_menu);
+                // $( "a:contains('Devices')").empty().append('<i class="mdi mdi-crosshairs-gps"></i> '+trd.devices_top_menu);
+                // $( "a:contains('Push Notifications')").empty().append('<i class="mdi mdi-chart-donut-variant"></i> '+trd.push_notifications_top_menu);
+                // $( "a:contains('Covid-19')").empty().append('<i class="mdi mdi-account-convert"></i> '+trd.covid19_top_menu);
+                // $( "a:contains('Administration')").empty().append('<i class="mdi mdi-card-bulleted-settings-outline"></i> '+trd.administration_top_menu);
+                // $( "a:contains('More..')").empty().append('<i class="mdi mdi-format-list-bulleted"></i> '+trd.more_top_menu);
+                // $( "a:contains('Addl. Settings')").text(trd.addl_settings_top_menu);
+
+                // $( "a:contains('Seismic activity')").text(trd.seismic_top_menu);
+                $("a").scanLink();
+                // adminMenu();
+                //        $( "a:contains('Help Topics')").text(check('help_topics_menu'));
+                //        $( "a:contains('Incident Reports')").text(check('incident_reports_menu'));
+                //        $( "a:contains('Picture Reports')").text(check('pic_reports_menu'));
+                //        $( "a:contains('911 Reports')").text(check('n911_reports_menu'));
+                //        $( "a:contains('Hazard Reports')").text(check('hazard_reports_menu'));
+
+
+
+            });
+
+
+        }
+
+        function loadLang(objx) {
+            let langx = navigator.language.substring(0, 2);
+            if (localStorage.getItem('_token_mimunicipio_vasudev_ip_lang')) {
+                langx = localStorage.getItem('_token_mimunicipio_vasudev_ip_lang');
+            }
+            $('#lang').val(langx);
+            console.log(langx);
+            $.post('https://mimunicipiopr.com/mimunicipioprv2/index.php/translations/getlang', JSON.stringify({lang: langx}), result => {
+                console.log('result called');
+                console.log(result);
+                const trd = result.data;
+                trdx = trd;
+                if (objx === 'init') {
+                    $("a").scanLink();
+                } else if (objx === 'admin') {
+                    $("a,th,h1,h2,h3,h4,h5,label").scanLink();
+                } else if (objx === 'gen') {
+                    $("a,th,h1,h2,h3,h4,h5,label").genLink();
+                } else if (objx === 'ctrlcen') {
+                    $("th,h1,h2,h3,h4,h5,label,option").ctrlCenLink();
+                } else {
+                    $("a,th,h1,h2,h3,h4,h5,label,option").chekLink(objx);
+                }
+                // adminMenu();
+
+
+
+            });
+        }
+
+        function genMenu() {
+            //  $("a,th,h1,h2,h3,h4,h5,label,option").chekLink(obj);
+        }
+
+        function checkMenu(obj) {
+            $("a,th,h1,h2,h3,h4,h5,label,option,button").chekLink(obj);
+        }
+
+        function adminMenu() {
+            $("a,th,h1,h2,h3,h4,h5,label").scanLink();
+            console.log($("ul.list-group.mb-0.user-list"));
+            console.log("ul coming");
+            var ulx = $("ul.list-group.mb-0.user-list");
+            if (ulx.children().length > 27){
+            a1 = ulx.children()[28];
+                    a2 = ulx.children()[29];
+                    a3 = ulx.children()[30];
+                    a4 = ulx.children()[31];
+                    a1.remove();
+                    a2.remove();
+                    a3.remove();
+                    a4.remove();
+                }
+//            for (var i = 0; i < ulx.length; i++) {
+//                if (i == 2){
+//                    console.log(ulx[i]);
+//                    a1 = $(ulx[i]).children()[28];
+//                    a2 = $(ulx[i]).children()[29];
+//                    a3 = $(ulx[i]).children()[30];
+//                    a4 = $(ulx[i]).children()[31];
+//                    a1.remove();
+//                    a2.remove();
+//                    a3.remove();
+//                    a4.remove();
+//                }
+//            }
+            // var ch = ($(ulx)[2]).children();
+            // console.log(ch);
+//            ch[28].remove();
+//            ch[29].remove();
+//            ch[30].remove();
+//            ch[31].remove(); 
+//            var a1 = $( 'a[href*="/mimunicipio/admin/administration/n11_report"]' );
+//            a1.remove();
+//            var a2 = $( 'a[href*="/mimunicipio/admin/administration/incident_pins"]' );
+//            a2.remove();
+//            var a3 = $( 'a[href*="/mimunicipio/admin/administration/pics_report"]' );
+//            a3.remove();
+//            var a4 = $( 'a[href*="/mimunicipio/admin/administration/hazard_report"]' );
+//            a4.remove();
+//            
+//            console.log(a1);
+            /*
+             $( "a:contains('General')").text(check('general_menu'));
+             $( "a:contains('Control Center phone')").text(check('control_center_menu'));
+             $( "a:contains('Emergency phone')").text(check('emgy_phone_menu'));
+             $( "a:contains('Reconnect Number')").text(check('reconnect_num_menu'));
+             $( "a:contains('State Police Number')").text(check('state_pol_menu'));
+             // $( "a:contains('Pre-filled messages')").textEquals('Pre-filled messages').text(check('pre_fill_msg_menu'));
+             //$( "a:contains('911 Pre-filled messages')").textEquals('911 Pre-filled messages').text(check('n911_pre_fill_menu'));
+             //$( "a:contains('Picture Pre-filled messages')").textEquals('Picture Pre-filled messages').text(check('pic_pre_fil_menu'));
+             $( "a:contains('Message Templates')").text(check('msg_tmp_menu'));
+             $( "a:contains('Neighborhoods')").text(check('neighborhoods_menu'));
+             $( "a:contains('Covid-19 Forms')").text(check('covid_forms_menu'));
+             $( "a:contains('Covid-19 Questionnaire')").text(check('covid_question_menu'));
+             $( "a:contains('IP Rules')").text(check('ip_rules_menu'));
+             $( "a:contains('SIP Server')").text(check('sip_server_menu'));
+             $( "a:contains('GPS Servers')").text(check('gps_server_menu'));
+             $( "a:contains('MMS Providers')").text(check('mms_provider_menu'));
+             $( "a:contains('SMS Settings')").text(check('sms_settings_menu'));
+             $( "a:contains('Device Types')").text(check('device_types_menu'));
+             $( "a:contains('Cameras')").text(check('cameras_menu'));
+             $( "a:contains('Users')").text(check('users_menu'));
+             $( "a:contains('Video')").text(check('video_menu'));
+             $( "a:contains('Zone')").text(check('zone_menu'));
+             $( "a:contains('Municipal Dependencies')").text(check('municipal_depen_menu'));
+             $( "a:contains('Shortcodes')").text(check('shortcodes_menu'));
+             $( "a:contains('Sponsors')").text(check('sponsors_menu'));
+             $( "a:contains('End Users')").text(check('end_users_menu'));
+             $( "a:contains('Help Topics')").text(check('help_topics_menu'));
+             // href="/mimunicipio/admin/administration/incident_pins"
+             // $( 'a[href*="/admin/administration/incident_pins"]' ).text(check('incident_reports_menu'));
+             $( "a:contains('Incident Reports')").text(check('incident_reports_menu'));
+             $( "a:contains('Picture Reports')").text(check('pic_reports_menu'));
+             ///admin/administration/pics_report
+             // $( 'a[href*="/admin/administration/pics_report"]' ).text(check('pic_reports_menu'));
+             $( "a:contains('911 Reports')").text(check('n911_reports_menu'));
+             // $( 'a[href*="/admin/administration/n11_report"]' ).text(check('n911_reports_menu'));
+             $( "a:contains('Hazard Reports')").text(check('hazard_reports_menu'));
+             // $( 'a[href*="/admin/administration/hazard_report"]' ).text(check('hazard_reports_menu'));
+             
+             // $( "a:contains('Reports')").text(trdx.reports_top_menu);
+             */
+        }
+
+
+    </script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
